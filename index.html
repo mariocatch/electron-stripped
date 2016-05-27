@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stripped Electron App</title>
+
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/nativize.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+  <link rel="stylesheet" href="assets/css/section.css">
+
+  <link rel="import" href="sections/foobar/foo.html">
+  <link rel="import" href="sections/foobar/bar.html">
+</head>
+
+<body>
+
+  <nav class="nav js-nav">
+    <header class="nav-header">
+      <h1 class="nav-title">Stripped <strong>Electron App</strong></h1>
+      <svg class="nav-header-icon"><use xlink:href="assets/img/icons.svg#icon-electron"></use></svg>
+    </header>
+
+    <div class="nav-item u-category-foobar">
+      <h5 class="nav-category">
+        <svg class="nav-icon"><use xlink:href="assets/img/icons.svg#icon-windows"></use></svg>
+        Foo <strong>Bar</strong>
+      </h5>
+      <button type="button" id="button-foo" data-section="foo" class="nav-button"><em>Foo</em></button>
+      <button type="button" id="button-bar" data-section="bar" class="nav-button"><em>Bar</em></button>
+    </div>
+  </nav>
+
+  <main class="content js-content"></main>
+
+  <script>
+    require('./assets/imports')
+    require('./assets/nav')
+  </script>
+</body>
+
+</html>

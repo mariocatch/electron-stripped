@@ -1,0 +1,9 @@
+{
+  "name": "electron-stripped",
+  "version": "1.0.0",
+  "main": "main.js",
+  "dependencies": {
+    "electron-json-storage": "^2.0.0",
+    "glob": "^6.0.4"
+  }
+}
